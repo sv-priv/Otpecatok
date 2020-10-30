@@ -12,7 +12,8 @@ import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { EnergyFormComponent } from './energy-form/energy-form.component';
-import {LandingComponent} from './landing/landing.component'
+import {LandingComponent} from './landing/landing.component';
+import { FormsSliderComponent } from './forms-slider/forms-slider.component'
 
 @NgModule({
     imports: [
@@ -31,7 +32,8 @@ import {LandingComponent} from './landing/landing.component'
         NgbdModalComponent,
         NgbdModalContent,
         EnergyFormComponent,
-        LandingComponent
+        LandingComponent,
+        FormsSliderComponent
 
     ],
     entryComponents: [NgbdModalContent],
