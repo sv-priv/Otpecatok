@@ -1,0 +1,220 @@
+<div class="wrapper">
+    <div class="page-header section-dark" style="background-image: url('assets/img/antoine-barres.jpg')">
+        <div class="filter"></div>
+        <div class="content-center">
+            <div class="container">
+                <div class="title-brand">
+                    <div class="angular-logo">
+                        <img src="" alt="">
+                    </div>
+                    <h1 class="presentation-title">Carbon Calculator</h1>
+                    <div class="fog-low">
+                        <img src="assets/img/fog-low.png" alt="">
+                    </div>
+                    <div class="fog-low right">
+                        <img src="assets/img/fog-low.png" alt="">
+                    </div>
+                </div>
+
+                <h2 class="presentation-subtitle text-center">
+
+                            test sl;alalkjancsla sajcncakclasaknlsak aslcaca;ncacna
+
+                    <a href="" target="_blank" class="btn btn-success btn-round">Calculate</a>
+                </h2>
+            </div>
+        </div>
+        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
+
+    </div>
+    <div class="section" id="carousel">
+        <div class="container">
+            <div class="tim-title">
+                <h3>Carousel</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <div class="card page-carousel">
+                        <ngb-carousel>
+                            <ng-template ngbSlide>
+                                <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
+                                <div class="carousel-caption">
+                                    <p>Somewhere</p>
+                                </div>
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
+                                <div class="carousel-caption">
+                                    <p>Somewhere else</p>
+                                </div>
+                            </ng-template>
+                            <ng-template ngbSlide>
+                                <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
+                                <div class="carousel-caption">
+                                    <p>Here it is</p>
+                                </div>
+                            </ng-template>
+                        </ngb-carousel>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <app-energy-form *ngIf = "isEnergy===0"></app-energy-form>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <form *ngIf="isEnergy === 1">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">VTORAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary ">Sign in</button>
+    </form>
+        </div>
+    </div>
+    <div class="main">
+
+
+        <div class="section section-dark section-nucleo-icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="title">Nucleo Icons</h2><br/>
+                        <p class="description">
+                            Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The official package contains over 2.100 thin icons which are looking great in combination with Now UI Kit Make sure you check all of them and use those that you like the most.
+                        </p><br/>
+                        <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">View Demo Icons</a>
+                        <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round" target="_blank">View All Icons</a>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12">
+                        <div class="icons-container">
+                            <i class="nc-icon nc-time-alarm"></i>
+                            <i class="nc-icon nc-atom"></i>
+                            <i class="nc-icon nc-camera-compact"></i>
+                            <i class="nc-icon nc-watch-time"></i>
+                            <i class="nc-icon nc-key-25"></i>
+                            <i class="nc-icon nc-diamond"></i>
+                            <i class="nc-icon nc-user-run"></i>
+                            <i class="nc-icon nc-layout-11"></i>
+                            <i class="nc-icon nc-badge"></i>
+                            <i class="nc-icon nc-bulb-63"></i>
+                            <i class="nc-icon nc-favourite-28"></i>
+                            <i class="nc-icon nc-planet"></i>
+                            <i class="nc-icon nc-tie-bow"></i>
+                            <i class="nc-icon nc-zoom-split"></i>
+                            <i class="nc-icon nc-cloud-download-93"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Completed with examples</h2>
+                        <p class="description">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. More importantly, looking at them will give you a picture of what you can built with this powerful kit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-dark">
+            <div class="container">
+                <div class="row example-page">
+                    <div class="col-md-6 text-center" routerLinkActive="active">
+                        <a [routerLink]="['/landing']">
+                            <img src="./assets/img/examples/landing-page.JPG" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
+                            <a [routerLink]="['/landing']" class="btn btn-outline-neutral btn-round">Landing Page</a>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 text-center" routerLinkActive="active">
+                        <a [routerLink]="['/user-profile']">
+                            <img src="./assets/img/examples/profile-page.JPG" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
+                            <a [routerLink]="['/user-profile']" class="btn btn-outline-neutral btn-round">Profile Page</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-8 ml-auto mr-auto text-center">
+                        <h2 class="title">Do you like what you see?</h2>
+                        <p class="description">Cause if you do, it can be yours for Free. Hit the button below and download it. Start a new project or give an old Bootstrap 4 project a new look.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 download-area ml-auto mr-auto">
+                        <a href="https://www.creative-tim.com/product/paper-kit-2" class="btn btn-warning btn-round">Download free HTML</a>
+                        <a href="https://www.creative-tim.com/product/paper-kit-2-angular" class="btn btn-danger btn-round">Download free Angular</a>
+                    </div>
+                </div>
+                <div class="row justify-content-md-center sharing-area text-center">
+                    <div class="text-center col-md-12 col-lg-8">
+                        <h3>Thank you for supporting us!</h3>
+                    </div>
+                    <div class="text-center col-md-12 col-lg-8">
+                        <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip" title="Tweet!">
+                            <i class="fa fa-twitter"></i> Twitter
+                        </a>
+
+                        <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip" title="Share!">
+                            <i class="fa fa-facebook-square"></i> Facebook
+                        </a>
+                        <a href="https://github.com/creativetimofficial/paper-kit" class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip" title="Star on Github">
+                            <i class="fa fa-github"></i> Star
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
