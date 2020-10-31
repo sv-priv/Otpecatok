@@ -1,24 +1,24 @@
 <div class="wrapper">
-    <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
+    <div class="page-header" style="background-image: url('https://wallpapercave.com/wp/CaQ92yV.jpg');">
         <div class="filter"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
                       <div class="card card-register">
-                          <h3 class="title">Welcome</h3>
+                          <h3 class="title " style="color: #66615B;">Добредојде!</h3>
                           <div class="social-line text-center">
-                              <a href="#pablo" class="btn btn-neutral btn-facebook btn-just-icon">
+                              <a href="#" class="btn btn-neutral btn-facebook btn-just-icon">
                                   <i class="fa fa-facebook-square"></i>
                               </a>
-                              <a href="#pablo" class="btn btn-neutral btn-google btn-just-icon">
+                              <a href="#" class="btn btn-neutral btn-google btn-just-icon">
                                   <i class="fa fa-google-plus"></i>
                               </a>
-                              <a href="#pablo" class="btn btn-neutral btn-twitter btn-just-icon">
+                              <a href="#" class="btn btn-neutral btn-twitter btn-just-icon">
                                   <i class="fa fa-twitter"></i>
                               </a>
                           </div>
                           <form class="register-form">
-                              <label>Email</label>
+                              <label>Е-маил</label>
                               <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text">
@@ -26,28 +26,33 @@
                                   </span>
                                 </div>
 
-                                  <input type="text" class="form-control" placeholder="Email" (focus)="focus=true" (blur)="focus=false" >
+                                  <input type="text" class="form-control" placeholder="Е-маил" (focus)="focus=true" (blur)="focus=false" >
                               </div>
 
-                              <label>Password</label>
+                              <label>Лозинка</label>
                               <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
                                 <div class="input-group-prepend">
                                   <span class="input-group-text">
                                       <i class="nc-icon nc-key-25"></i>
                                   </span>
                                 </div>
-                                  <input type="text" class="form-control" placeholder="Password" (focus)="focus1=true" (blur)="focus1=false" >
+                                  <input type="text" class="form-control" placeholder="Лозинка" (focus)="focus1=true" (blur)="focus1=false" >
                               </div>
-                              <button class="btn btn-danger btn-block btn-round">Register</button>
+                              <button class="btn btn-success btn-block btn-round">Регистрирај се</button>
                           </form>
                           <div class="forgot">
-                              <a href="#" class="btn btn-link btn-danger">Forgot password?</a>
+                              <a href="#" class="btn btn-link ">Заборавена лозинка?</a>
                           </div>
                       </div>
                     </div>
                 </div>
                 <div class="footer register-footer text-center">
-                    <h6>&copy;{{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Creative Tim</h6>
+                    <h5>Регистрирај се, стани еколошки активен,<br>
+                     сподели идеја за подобрување на екологијата<br>
+                     во твојата околина.
+                    </h5>
+                    <h3>Приклучи се на </h3>
+
                 </div>
             </div>
     </div>

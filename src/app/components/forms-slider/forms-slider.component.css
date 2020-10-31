@@ -11,11 +11,30 @@
         z-index: 1;
         align-items: center;
     }
+    .row{
+        margin-left: 0px!important;
+    }
 
 
     .custom-left{
         background-color: white;
+
     }
     .custom-right{
-        background-color: black;
+        background-color: black!important;
+
     }
+    .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-top: 0 auto;
+        margin-bottom: 10px;
+}
+.mx-auto{
+    margin-top: auto!important;
+    margin-bottom: auto!important;
+    margin-right: auto!important;
+    margin-left: auto!important;
+
+
+}

@@ -1,0 +1,50 @@
+<form [formGroup]="dietForm" (ngSubmit)="saveDietForm()" >
+    <label for="">
+        <h4>Кој е вашиот тип на исхрана?</h4>
+
+    </label>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="dieta" id="exampleRadios1" value="vegan" checked>
+          <label class="form-check-label" for="exampleRadios1">
+                Веган
+            </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="dieta" id="exampleRadios2" value="vegetarian">
+          <label class="form-check-label" for="exampleRadios2">
+            Вегетаријанец
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="dieta"id="exampleRadios2" value="low-meat">
+          <label class="form-check-label" for="exampleRadios2">
+            Ниско количество на место
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="dieta" id="exampleRadios2" value="medium-meat">
+          <label class="form-check-label" for="exampleRadios2">
+            Средно количество на месо
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" formControlName="dieta" id="exampleRadios2" value="high-meat">
+          <label class="form-check-label" for="exampleRadios2">
+            Високо количество на место
+          </label>
+        </div>
+
+    <h4>Колкаво количество на храна фрлате?</h4>
+    <mat-slider formControlName="frlanjeHrana"
+      #gridsize
+      (change)="updateSetting($event)"
+      thumbLabel
+      tickInterval="1000"
+      min="0"
+      max="100">
+    </mat-slider>
+
+    <button class = "btn btn-success button" type="submit">Следно</button>
+
+  </form>

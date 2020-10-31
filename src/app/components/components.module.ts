@@ -1,23 +1,36 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
+
 import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
-import { NucleoiconsComponent } from './nucleoicons/nucleoicons.component';
 import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import {LandingComponent} from './landing/landing.component';
 import { FormsSliderComponent } from './forms-slider/forms-slider.component';
-import { MethodologyComponent } from './methodology/methodology.component'
+import { MethodologyComponent } from './methodology/methodology.component';
+import { AirComponent } from './air/air.component';
+import { RecyclingComponent } from './recycling/recycling.component';
+import { CyclingComponent } from './cycling/cycling.component';
+import { GoElectricComponent } from './go-electric/go-electric.component';
+import { ResultComponent } from './result/result.component';
+import { MessageBoardComponent } from './message-board/message-board.component';
+import { ProfileComponent } from './profile/profile.component';
+import { SignupComponent } from './signup/signup.component';
+import {EnergyComponent} from './energy/energy.component';
+import {HabitsComponent} from './habits/habits.component';
+import {DietComponent} from './diet/diet.component';
+import {TransportComponent} from './transport/transport.component';
 
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
+        ReactiveFormsModule,
         NgbModule,
         NouisliderModule,
         RouterModule,
@@ -25,15 +38,27 @@ import { MethodologyComponent } from './methodology/methodology.component'
     ],
     declarations: [
         ComponentsComponent,
-        NucleoiconsComponent,
         NotificationComponent,
         NgbdModalComponent,
         NgbdModalContent,
         LandingComponent,
         FormsSliderComponent,
-        MethodologyComponent
+        MethodologyComponent,
+        AirComponent,
+        RecyclingComponent,
+        CyclingComponent,
+        GoElectricComponent,
+        ResultComponent,
+        MessageBoardComponent,
+        ProfileComponent,
+        SignupComponent,
+        EnergyComponent,
+        HabitsComponent,
+        DietComponent,
+        TransportComponent
 
     ],
+
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]
 })

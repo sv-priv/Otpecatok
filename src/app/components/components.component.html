@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div class="page-header section-dark" style="background-image: url('assets/img/antoine-barres.jpg')">
+    <div class="page-header section-dark" style="background-image: url('https://correspondent.afp.com/sites/default/files/styles/list_xl/public/medias/aa_new_posts/countries/macedonia/skopje-pollution-dec17/macedonia-pollution-skopje-010.jpg?itok=dBo3wxFm')">
         <div class="filter"></div>
         <div class="content-center">
             <div class="container">
@@ -7,61 +7,56 @@
                     <div class="angular-logo">
                         <img src="" alt="">
                     </div>
-                    <h1 class="presentation-title">Carbon Calculator</h1>
-                    <div class="fog-low">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                    <div class="fog-low right">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
+                    <h1 class="presentation-title">ЈаглерО2</h1>
+
                 </div>
 
                 <h2 class="presentation-subtitle text-center">
 
                             Пресметајте го вашиот јаглероден отпечаток, станете свесни за проблемите во општеството.
-                            Почнете од тука.
-
-                    <a href="" target="_blank" class="btn btn-success btn-round">Пресметај </a>
-                </h2>
+                            Почнете од тука.<br>
+                            <a  [routerLink]="['/forms-slider']" class="btn btn-success btn-round">Пресметај </a>
+                        </h2>
             </div>
         </div>
         <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
 
     </div>
-    <app-forms-slider></app-forms-slider>
+
+
     <div class="main">
+
+    <div class="custom">
+        <div class="row">
+            <div class="col-md-5" style="margin:0 auto;margin-top:7%; margin-bottom: 7%; padding:3%; " >
+                <app-energy  (eventClick)="handleEventClicked2($event)" *ngIf="flag === 0"></app-energy>
+                <app-diet  (eventClick)="handleEventClicked2($event)" *ngIf="flag === 1"></app-diet>
+                <app-transport (eventClick)="handleEventClicked3($event)" *ngIf="flag === 2"></app-transport>
+                <app-habits (eventClick)="handleEventClicked4($event)" *ngIf="flag === 3"></app-habits>
+                <app-result (eventClick)="handleEventClicked5($event)" *ngIf="flag === 4"></app-result>
+            </div>
+        </div>
+
+      </div>
+
+
 
 
         <div class="section section-dark section-nucleo-icons">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <h2 class="title">Nucleo Icons</h2><br/>
+                        <h2 class="title">Карбон Калкулатор</h2><br/>
                         <p class="description">
-                            Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The official package contains over 2.100 thin icons which are looking great in combination with Now UI Kit Make sure you check all of them and use those that you like the most.
+                            Идејата на карбон калкулаторот е да го пресмета вашиот јаглероден отпечаток што вие го оставате во општеството, да ве запознае со
+                            работите кои навидум ви личат како да не прават разлика, да ве корегира за тоа што можете да го промените за општото добро
+                            на општетсвото. Да ве направи еколошки свесни и активни!
                         </p><br/>
-                        <a [routerLink]="['/nucleoicons']" class="btn btn-danger btn-round">View Demo Icons</a>
-                        <a href="https://nucleoapp.com/?ref=1712" class="btn btn-outline-danger btn-round" target="_blank">View All Icons</a>
+                        <a  [routerLink]="['/forms-slider']" class="btn btn-success btn-round">Пресметај </a>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
-                        <div class="icons-container">
-                            <i class="nc-icon nc-time-alarm"></i>
-                            <i class="nc-icon nc-atom"></i>
-                            <i class="nc-icon nc-camera-compact"></i>
-                            <i class="nc-icon nc-watch-time"></i>
-                            <i class="nc-icon nc-key-25"></i>
-                            <i class="nc-icon nc-diamond"></i>
-                            <i class="nc-icon nc-user-run"></i>
-                            <i class="nc-icon nc-layout-11"></i>
-                            <i class="nc-icon nc-badge"></i>
-                            <i class="nc-icon nc-bulb-63"></i>
-                            <i class="nc-icon nc-favourite-28"></i>
-                            <i class="nc-icon nc-planet"></i>
-                            <i class="nc-icon nc-tie-bow"></i>
-                            <i class="nc-icon nc-zoom-split"></i>
-                            <i class="nc-icon nc-cloud-download-93"></i>
-                        </div>
+                        <img src="https://img.pngio.com/calculate-your-carbon-footprint-carbon-footprint-icon-png-carbon-footprint-png-515_650.png" alt="">
                     </div>
                 </div>
             </div>
@@ -77,25 +72,6 @@
             </div>
         </div>
 
-        <div class="section section-dark">
-            <div class="container">
-                <div class="row example-page">
-                    <div class="col-md-6 text-center" routerLinkActive="active">
-                        <a [routerLink]="['/landing']">
-                            <img src="./assets/img/examples/landing-page.JPG" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                            <a [routerLink]="['/landing']" class="btn btn-outline-neutral btn-round">Landing Page</a>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 text-center" routerLinkActive="active">
-                        <a [routerLink]="['/user-profile']">
-                            <img src="./assets/img/examples/profile-page.JPG" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                            <a [routerLink]="['/user-profile']" class="btn btn-outline-neutral btn-round">Profile Page</a>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="section">
             <div class="container text-center">
                 <div class="row">
@@ -104,25 +80,20 @@
                         <p class="description">Cause if you do, it can be yours for Free. Hit the button below and download it. Start a new project or give an old Bootstrap 4 project a new look.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 download-area ml-auto mr-auto">
-                        <a href="https://www.creative-tim.com/product/paper-kit-2" class="btn btn-warning btn-round">Download free HTML</a>
-                        <a href="https://www.creative-tim.com/product/paper-kit-2-angular" class="btn btn-danger btn-round">Download free Angular</a>
-                    </div>
-                </div>
+
                 <div class="row justify-content-md-center sharing-area text-center">
                     <div class="text-center col-md-12 col-lg-8">
-                        <h3>Thank you for supporting us!</h3>
+                        <h3>Ви благодариме на поддршката!</h3>
                     </div>
                     <div class="text-center col-md-12 col-lg-8">
-                        <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip" title="Tweet!">
+                        <a href="#" class="btn btn-twitter-bg twitter-sharrre btn-round" rel="tooltip" title="Tweet!">
                             <i class="fa fa-twitter"></i> Twitter
                         </a>
 
-                        <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip" title="Share!">
+                        <a href="#" class="btn btn-facebook-bg facebook-sharrre btn-round" rel="tooltip" title="Share!">
                             <i class="fa fa-facebook-square"></i> Facebook
                         </a>
-                        <a href="https://github.com/creativetimofficial/paper-kit" class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip" title="Star on Github">
+                        <a href="" class="btn btn-github-bg btn-github sharrre btn-round" rel="tooltip" title="Star on Github">
                             <i class="fa fa-github"></i> Star
                         </a>
                     </div>
