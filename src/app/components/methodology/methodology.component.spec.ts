@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EnergyFormComponent } from './energy-form.component';
+import { MethodologyComponent } from './methodology.component';
 
-describe('EnergyFormComponent', () => {
-  let component: EnergyFormComponent;
-  let fixture: ComponentFixture<EnergyFormComponent>;
+describe('MethodologyComponent', () => {
+  let component: MethodologyComponent;
+  let fixture: ComponentFixture<MethodologyComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ EnergyFormComponent ]
+      declarations: [ MethodologyComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EnergyFormComponent);
+    fixture = TestBed.createComponent(MethodologyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
