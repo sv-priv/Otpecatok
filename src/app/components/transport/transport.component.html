@@ -1,7 +1,13 @@
 <form [formGroup]="transportForm" (ngSubmit)="saveTransportForm()">
 
     <div formGroupName="kola">
-      <mat-slide-toggle [(ngModel)]="isChecked" formControlName="ima">Дали користите автомобил?</mat-slide-toggle>
+
+      <!-- <mat-slide-toggle [(ngModel)]="isChecked" formControlName="ima">Дали користите автомобил?</mat-slide-toggle> -->
+      <div class="form-group">
+        <label for="ima"> Дали користите автомобил?</label><br>
+        <input formControlName="ima" [(ngModel)]="isChecked" type="checkbox"  class="form-control" >
+
+      </div>
 
       <div class="form-group" *ngIf="isChecked">
           <label for="">Каков автомобил користите?</label>
@@ -9,6 +15,7 @@
             <option value="" disabled>Избери тип:</option>
             <option *ngFor="let tip of map | keyvalue" [ngValue]="tip.key">{{tip.value}}</option>
          </select>
+
       </div>
       <div class="form-group" *ngIf="isChecked">
           <label for="">Година на производство?</label>

@@ -38,3 +38,45 @@ export interface Energy{
     },
     gjubre: number
   }
+
+  export interface EnergyResult{
+    drva: number,
+    nafta: number,
+    paleti: number,
+    parno: number,
+    struja: number,
+    vkupno: number
+  }
+
+  export interface DietResult{
+    dieta: number,
+    frlanjeHrana: number,
+    vkupno: number
+  }
+
+  export interface HabitsResult{
+    avion: number,
+    gjubre: number,
+    obleka: number,
+    vkupno: number
+  }
+
+  export interface TransportResult{
+    avtobus: number,
+    avtomobil: number,
+    motor: number,
+    velosiped: number,
+    vkupno: number
+  }
+
+  export interface Statistika{
+    brandNewCar2018: number,
+    reduceDoubleFoodWaste: number,
+    removeWoodPalets: number,
+    switchFromBusToBike: number,
+    switchHalfCarForBus: number,
+    switchHalfFlightTime: number,
+    switchToVegetarian: number,
+    tenPercentLessWaste: number,
+    vkupno: number
+  }

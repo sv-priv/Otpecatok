@@ -6,34 +6,44 @@
 
   <div formGroupName="potrosuvacka">
     <div class="form-group">
-      <label>Струја</label>
-      <input type="number" class="form-control" min="0" formControlName="struja"  placeholder="">
+      <label >Струја</label>
+      <input type="number"   class="form-control" min="0" formControlName="struja"  placeholder="">
+      <small id="emailHelp" class="form-text text-muted">(kwh): Може да ги соберете сметките за струја од ЕВН и да ја соберете потрошувачката во kWh.
+      </small>
     </div>
     <div class="form-group">
       <label>Парно</label>
       <input type="number" min="0" formControlName="parno" class="form-control" placeholder="">
+      <small id="emailHelp" class="form-text text-muted">(kwh): Доколку имате парно греење на сметките од БЕГ на задната страна од сметката поделете ја прогнозираната потрошувачка (1) со бројот на потрошувачи (5).</small>
     </div>
 
     <div class="form-group">
       <label>Нафта</label>
       <input type="number" min="0" formControlName="nafta" class="form-control" placeholder="">
+      <small id="" class="form-text text-muted">(l): Пресметајте колку нафта користите годишно.</small>
+
     </div>
 
     <div class="form-group">
       <label>Пелети</label>
       <input type="number" min="0" formControlName="paleti" class="form-control" placeholder="">
+      <small id="" class="form-text text-muted">(kg): Пресметајте колку палети користите годишно.</small>
+
     </div>
 
     <div class="form-group">
       <label>Дрва</label>
-      <input type="number" min="0" formControlName="drva" class="form-control" placeholder="">
+      <input type="number" min="0" formControlName="drva" class="form-control" placeholder="...">
+      <small id="" class="form-text text-muted">(m3): Пресметајте колку кубици дрва користите годишно</small>
+
     </div>
 
   </div>
   <h4>Колку луѓе живеат во вашиот дом?</h4>
   <div class="form-group">
   <label for="">Број на членови</label>
-    <input type="number" min="0" formControlName="lugjeDomakinstvo" class="form-control" placeholder="Број на членови..">
+    <input type="number" min="0" formControlName="lugjeDomakinstvo" class="form-control" placeholder="...">
+
   </div>
 
 <button  class="btn btn-success button"type="submit">Следно</button>

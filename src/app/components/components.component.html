@@ -10,13 +10,18 @@
                     <h1 class="presentation-title">ЈаглерО2</h1>
 
                 </div>
+                <h2 class="presentation-subtitle text-center ">
 
-                <h2 class="presentation-subtitle text-center">
+                    Пресметајте го вашиот индивидуален јаглероден отпечаток. Станете свесни за еколошките проблеми и дејствувајте.
+                    Почнете од тука!
 
-                            Пресметајте го вашиот јаглероден отпечаток, станете свесни за проблемите во општеството.
-                            Почнете од тука.<br>
-                            <a  [routerLink]="['/forms-slider']" class="btn btn-success btn-round">Пресметај </a>
-                        </h2>
+                <br>
+                <br>
+                <!-- <a href="#kviz" class="btn btn-success btn-round " style="text-align: center;"> Пресметај </a> -->
+
+                    </h2>
+
+
             </div>
         </div>
         <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
@@ -26,58 +31,75 @@
 
     <div class="main">
 
-    <div class="custom">
-        <div class="row">
-            <div class="col-md-5" style="margin:0 auto;margin-top:7%; margin-bottom: 7%; padding:3%; " >
-                <app-energy  (eventClick)="handleEventClicked2($event)" *ngIf="flag === 0"></app-energy>
-                <app-diet  (eventClick)="handleEventClicked2($event)" *ngIf="flag === 1"></app-diet>
-                <app-transport (eventClick)="handleEventClicked3($event)" *ngIf="flag === 2"></app-transport>
-                <app-habits (eventClick)="handleEventClicked4($event)" *ngIf="flag === 3"></app-habits>
-                <app-result (eventClick)="handleEventClicked5($event)" *ngIf="flag === 4"></app-result>
-            </div>
-        </div>
-
-      </div>
 
 
-
-
-        <div class="section section-dark section-nucleo-icons">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <h2 class="title">Карбон Калкулатор</h2><br/>
-                        <p class="description">
-                            Идејата на карбон калкулаторот е да го пресмета вашиот јаглероден отпечаток што вие го оставате во општеството, да ве запознае со
-                            работите кои навидум ви личат како да не прават разлика, да ве корегира за тоа што можете да го промените за општото добро
-                            на општетсвото. Да ве направи еколошки свесни и активни!
-                        </p><br/>
-                        <a  [routerLink]="['/forms-slider']" class="btn btn-success btn-round">Пресметај </a>
-                    </div>
-
-                    <div class="col-lg-6 col-md-12">
-                        <img src="https://img.pngio.com/calculate-your-carbon-footprint-carbon-footprint-icon-png-carbon-footprint-png-515_650.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="section section-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Completed with examples</h2>
-                        <p class="description">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. More importantly, looking at them will give you a picture of what you can built with this powerful kit.</p>
+                        <h2 class="title">Што е јаглероден отпечаток</h2>
+                        <p class="description">Јаглеродниот отпечаток е мерка за влијанието што го имаат нашите активности врз количината на јаглерод диоксид (СО2) произведена преку согорување на фосилни горива.
+
+                            Овој фактор е многу важен бидејќи глобалната цел е планетата Земја да не ја надмине просечната атмосферска температура од 2 степени целзиусови. Тоа може да се случи со намалување на согорувањето на фосилни горива, па затоа многу е важно да се ограничи нашиот јаглероден отпечаток.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-dark section-nucleo-icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <h2 class="title">Проценувач на јаглероден отпечаток</h2><br/>
+                        <p class="description">
+
+
+Според еколошките цели за 2020 година секој човек треба да произведе помалку од 10.5 тони јаглероден диоксиод. Оваа варијабла за жал се намалува секоја година.
+
+Од каде доаѓа нашата енергија, дали од обновливи извори или јаглен, дали јадеме повеќе или помалку месо, колку и како патуваме, ове се фактори кои драстично можат да го намалат нашиот јаглероден отпечаток.
+
+За да го пресметаме нашиот личен јаглероден отпечаток можете да го искористите нашиот калкулатор за јаглероден отпечаток кој користи податоци релевантни за Македонија.
+                        </p><br/>
+                        <div style="text-align: center;">
+                        <a  href="#kviz" class="btn btn-success btn-round">Пресметај </a>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 " style="margin-left: 13%;">
+                        <img src="https://www.flaticon.com/premium-icon/icons/svg/3300/3300958.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="section">
+        <div class="container mx-auto">
+        </div>
+
+        <div class="custom" id="kviz" style="border:1px solid #ced4da; ">
+<h2 style="text-align: center;">         Проценувач на јаглероден отпечаток
+</h2>
+            <div class="row">
+                <div class="col-md-5" style="margin:0 auto;margin-top:2%; margin-bottom: 7%; padding:3%; background-color: #f8f9fa!important;  border:1px solid #6bd098;border-radius: 5%;" >
+                    <app-energy  (eventClick)="handleEventClicked2($event)" *ngIf="flag === 0"></app-energy>
+                    <app-diet  (eventClick)="handleEventClicked2($event)" *ngIf="flag === 1"></app-diet>
+                    <app-transport (eventClick)="handleEventClicked3($event)" *ngIf="flag === 2"></app-transport>
+                    <app-habits (eventClick)="handleEventClicked4($event)" *ngIf="flag === 3"></app-habits>
+                    <app-result (eventClick)="handleEventClicked5($event)" *ngIf="flag === 4"></app-result>
+                </div>
+            </div>
+
+          </div>
+
+        <div class="section section-dark">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">Do you like what you see?</h2>
-                        <p class="description">Cause if you do, it can be yours for Free. Hit the button below and download it. Start a new project or give an old Bootstrap 4 project a new look.</p>
+                        <h2 class="title">Мотивација</h2>
+                        <p class="description">
+                            Сакаме да создадеме веб-портал кој ќе нуди различни алатки и информации од сферата на екологијата и животната средина.
+                             Осеќаме потреба да го направиме овој проект бидејќи сакаме да ги освестиме граѓаните за секојдневните еколошки проблеми со кои
+                             што се соочуваме и да им поттикнеме желба за промена.
+                             Со мали чекори, сугестии, промена на навики можеме да создадеме позитивна промена која што започнува од нас.
+                            </p>
                     </div>
                 </div>
 

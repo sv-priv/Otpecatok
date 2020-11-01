@@ -28,7 +28,8 @@ const routes: Routes =[
     { path: 'recycling',      component: RecyclingComponent },
     { path: 'cycling',      component: CyclingComponent },
     { path: 'go-electric',      component: GoElectricComponent },
-    { path: 'forms-slider',      component: FormsSliderComponent }
+    { path: 'forms-slider',      component: FormsSliderComponent },
+    { path: 'home:kviz',             component: ComponentsComponent }
 
 
 
