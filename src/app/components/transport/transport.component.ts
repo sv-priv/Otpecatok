@@ -12,7 +12,7 @@ export class TransportComponent implements OnInit {
   isChecked = false;
   value = "";
   transportForm: FormGroup
-  map = new Map([["dizel", "Дизел"], ["benzin", "Бензин"], ["gas", "Гас"], ["elektricen", "Електричен"], ["hybrid", "Хибрид"]])
+  map = new Map([["dizel", "Дизел"], ["benzin", "Бензин"]])
   @Output() eventClick = new EventEmitter();
 
   constructor(private service: AppService) { }

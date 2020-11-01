@@ -6,9 +6,6 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { JwBootstrapSwitchNg2Module } from 'jw-bootstrap-switch-ng2';
 import { RouterModule } from '@angular/router';
 import { ComponentsComponent } from './components.component';
-import { NotificationComponent } from './notification/notification.component';
-import { NgbdModalComponent } from './modal/modal.component';
-import { NgbdModalContent } from './modal/modal.component';
 import {LandingComponent} from './landing/landing.component';
 import { FormsSliderComponent } from './forms-slider/forms-slider.component';
 import { MethodologyComponent } from './methodology/methodology.component';
@@ -37,9 +34,6 @@ import {TransportComponent} from './transport/transport.component';
     ],
     declarations: [
         ComponentsComponent,
-        NotificationComponent,
-        NgbdModalComponent,
-        NgbdModalContent,
         LandingComponent,
         FormsSliderComponent,
         MethodologyComponent,
@@ -58,7 +52,7 @@ import {TransportComponent} from './transport/transport.component';
 
     ],
 
-    entryComponents: [NgbdModalContent],
+    entryComponents: [],
     exports:[ ComponentsComponent ]
 })
 export class ComponentsModule { }

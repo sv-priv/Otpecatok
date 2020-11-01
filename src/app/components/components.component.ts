@@ -14,6 +14,7 @@ import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 export class ComponentsComponent implements OnInit {
     page = 4;
     flag ;
+    flagFinal;
     page1 = 5;
     focus;
     focus1;
@@ -32,6 +33,7 @@ export class ComponentsComponent implements OnInit {
 
     ngOnInit() {
       this.flag = 0
+      this.flagFinal=0
 
         let input_group_focus = document.getElementsByClassName('form-control');
         let input_group = document.getElementsByClassName('input-group');
@@ -65,6 +67,7 @@ export class ComponentsComponent implements OnInit {
   handleEventClicked4(data){
     this.flag = data
     console.log("eoooo" + this.flag)
+    this.flagFinal =1;
   }
 
   handleEventClicked5(data){

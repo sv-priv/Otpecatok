@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div class="page-header section-dark" style="background-image: url('https://correspondent.afp.com/sites/default/files/styles/list_xl/public/medias/aa_new_posts/countries/macedonia/skopje-pollution-dec17/macedonia-pollution-skopje-010.jpg?itok=dBo3wxFm')">
+    <div class="page-header section-dark" style="background-image: url('../../assets/img/skopje.jpg')">
         <div class="filter"></div>
         <div class="content-center">
             <div class="container">
@@ -71,23 +71,26 @@
             </div>
         </div>
 
-        <div class="container mx-auto">
-        </div>
+        <!-- <div class="container mx-auto">
+        </div> -->
 
-        <div class="custom" id="kviz" style="border:1px solid #ced4da; ">
-<h2 style="text-align: center;">         Проценувач на јаглероден отпечаток
-</h2>
+        <div class="custom" id="kviz" style="border:1px solid #ced4da; " *ngIf="flagFinal === 0">
+            <h2 style="text-align: center;"> Проценувач на јаглероден отпечаток</h2>
             <div class="row">
                 <div class="col-md-5" style="margin:0 auto;margin-top:2%; margin-bottom: 7%; padding:3%; background-color: #f8f9fa!important;  border:1px solid #6bd098;border-radius: 5%;" >
                     <app-energy  (eventClick)="handleEventClicked2($event)" *ngIf="flag === 0"></app-energy>
                     <app-diet  (eventClick)="handleEventClicked2($event)" *ngIf="flag === 1"></app-diet>
                     <app-transport (eventClick)="handleEventClicked3($event)" *ngIf="flag === 2"></app-transport>
                     <app-habits (eventClick)="handleEventClicked4($event)" *ngIf="flag === 3"></app-habits>
-                    <app-result (eventClick)="handleEventClicked5($event)" *ngIf="flag === 4"></app-result>
                 </div>
             </div>
 
-          </div>
+        </div>
+        <div style="margin-bottom: 5%; margin-top: 5%;">
+            <app-result (eventClick)="handleEventClicked5($event)" *ngIf="flag === 4" style="margin-top: 5%; margin-bottom: 5%;"></app-result>
+
+        </div>
+
 
         <div class="section section-dark">
             <div class="container text-center">
