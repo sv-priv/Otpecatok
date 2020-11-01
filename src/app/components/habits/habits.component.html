@@ -1,0 +1,59 @@
+<form [formGroup]="habitsForm" (ngSubmit)="saveHabitsForm()">
+    <small id="" class="form-text text-muted">Сите пресметки кои треба да ги внесете се на годишно ниво.</small>
+
+    <div class="form-group">
+        <label for="">Колку часови годишно летате со авион?</label>
+        <input type="number" min="0" class="form-control" formControlName="avionPatuvanja" placeholder="Број на часови..">
+        <small id="" class="form-text text-muted">Пресметајте колку часови годишно сте патувале со авион од полетување до слетување.</small>
+
+    </div>
+
+      <div formGroupName="obleka">
+          <div class="form-group">
+              <label for="">Колку пара патики купувате годишно?</label>
+              <input type="number" min="0" class="form-control" formControlName="patiki" placeholder="Количина на купени патики..">
+
+          </div>
+          <div class="form-group">
+            <label for="">Колку пара панталони купувате годишно?</label>
+            <input type="number" min="0" class="form-control" formControlName="pantaloni" placeholder="Количина на купени панталони..">
+
+        </div>
+        <div class="form-group">
+            <label for="">Колку маици купувате годишно?</label>
+            <input type="number" min="0" class="form-control" formControlName="maica" placeholder="Количина на купени маици..">
+
+        </div>
+        <div class="form-group">
+            <label for="">Колку јакни купувате годишно?</label>
+            <input type="number" min="0" class="form-control" formControlName="jakna" placeholder="Количина на купени јакни..">
+
+        </div>
+
+         </div>
+
+         <div class="form-group">
+            <label for="">Колкаво количество на ѓубре фрлате годишно?</label>
+            <input type="number" min="0" max="912" class="form-control" formControlName="gjubre" placeholder="Количина на фрлено ѓубре..">
+
+        <small id="" class="form-text text-muted">Од 0.5кг до 1кг ѓубре фрламе во една пластична ќеса.
+            Вклучете ја тежината на електрични уреди, мебел, стара хартија и слично што би го фрлиле во текот на годината.
+            Просекот е 456кг по човек. Дали сметате дека сте над или под просекот годишно?
+      </small>
+    </div>
+
+<!--
+    <h4>Колкаво количество на ѓубре фрлате годишно?</h4>
+    <mat-slider formControlName="gjubre"
+      #gridsize
+      (change)="updateSetting($event)"
+      thumbLabel
+      tickInterval="1000"
+      min="0"
+      max="912"></mat-slider>
+      <small id="" class="form-text text-muted">Од 0.5кг до 1кг ѓубре фрламе во една пластична ќеса.
+          Вклучете ја тежината на електрични уреди, мебел, стара хартија и слично што би го фрлиле во текот на годината.
+          Просекот е 456кг по човек. Дали сметате дека сте над или под просекот годишно?
+    </small> -->
+    <button class="btn btn-success button " type="submit">Следно</button>
+  </form>

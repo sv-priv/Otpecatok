@@ -1,0 +1,59 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('https://wallpapercave.com/wp/CaQ92yV.jpg');">
+        <div class="filter"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                      <div class="card card-register">
+                          <h3 class="title " style="color: #66615B;">Добредојде!</h3>
+                          <div class="social-line text-center">
+                              <a href="#" class="btn btn-neutral btn-facebook btn-just-icon">
+                                  <i class="fa fa-facebook-square"></i>
+                              </a>
+                              <a href="#" class="btn btn-neutral btn-google btn-just-icon">
+                                  <i class="fa fa-google-plus"></i>
+                              </a>
+                              <a href="#" class="btn btn-neutral btn-twitter btn-just-icon">
+                                  <i class="fa fa-twitter"></i>
+                              </a>
+                          </div>
+                          <form class="register-form">
+                              <label>Е-маил</label>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-email-85"></i>
+                                  </span>
+                                </div>
+
+                                  <input type="text" class="form-control" placeholder="Е-маил" (focus)="focus=true" (blur)="focus=false" >
+                              </div>
+
+                              <label>Лозинка</label>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-key-25"></i>
+                                  </span>
+                                </div>
+                                  <input type="text" class="form-control" placeholder="Лозинка" (focus)="focus1=true" (blur)="focus1=false" >
+                              </div>
+                              <button class="btn btn-success btn-block btn-round">Регистрирај се</button>
+                          </form>
+                          <div class="forgot">
+                              <a href="#" class="btn btn-link ">Заборавена лозинка?</a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="footer register-footer text-center">
+                    <h5>Регистрирај се, стани еколошки активен,<br>
+                     сподели идеја за подобрување на екологијата<br>
+                     во твојата околина.
+                    </h5>
+                    <h3>Приклучи се на </h3>
+
+                </div>
+            </div>
+    </div>
+</div>

@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand" href="#">Carbon Calculator</a>
-            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
+            <a class="navbar-brand" href="#">ЈаглерО2</a>
+            <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse"
+            data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -10,28 +11,48 @@
         </div>
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="#" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Take Action</a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
+                <!-- <li class="nav-item">
+                    <div ngbDropdown class="d-inline-block dropdown">
+                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-bulb-63"></i>Дејствувај!</a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                            <a class="dropdown-item">Action - 1</a>
+                            <a class="dropdown-item">Another Action</a>
+                            <a class="dropdown-item">Something else is here</a>
+                        </div>
+                    </div>
+                </li> -->
+                <li class="nav-item">
 
-                    <a [routerLink]="['/landing']"  class="nav-link" ><i class="nc-icon nc-book-bookmark"></i>About us</a>
+                <a href="#kviz" class="nav-link" ><i class="nc-icon nc-layers-3"></i>Пресметај</a>
                 </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a href="#" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Methodology</a>
+                <li class="nav-item">
+                    <a [routerLink] ="['/methodology']" class="nav-link" ><i class="nc-icon nc-book-bookmark"></i> Методологија</a>
+                </li>
+                <li class="nav-item">
+                    <div ngbDropdown class="d-inline-block dropdown">
+                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-zoom-split"></i>Едуцирај се</a>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
+                            <a [routerLink] ="['/air']" class="dropdown-item">Воздух</a>
+                            <a [routerLink] ="['/recycling']" class="dropdown-item">Рециклирање</a>
+                            <a [routerLink] ="['/cycling']" class="dropdown-item">Велосипедизам</a>
+                            <a [routerLink] ="['/go-electric']" class="dropdown-item">GO Електрик</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+
+                    <a [routerLink]="['/landing']"  class="nav-link" ><i class="nc-icon nc-badge"></i>За Нас</a>
                 </li>
 
 
                 <li class="nav-item" *ngIf="isHome()">
-                    <a href="" target="_blank" class="btn btn-success btn-round">Upgrade to Pro</a>
+                    <a [routerLink] ="['/signup']" class="btn btn-success btn-round">Најави се</a>
                 </li>
                 <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
-                    <a [routerLink]="['/home']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
+                    <a [routerLink]="['/user-profile']"  class="nav-link"><i class="nc-icon nc-single-02"></i>Мој Профил</a>
                 </li>
-                <li class="nav-item" *ngIf="isDocumentation()">
-                    <a href="https://github.com/creativetimofficial/paper-kit-2-angular/issues?ref=pk2-free-local" target="_blank" class="nav-link">Have an issue</a>
-                </li>
+
             </ul>
         </div>
     </div>

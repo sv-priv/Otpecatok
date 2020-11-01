@@ -4,10 +4,17 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ComponentsComponent } from './components/components.component';
-import { ProfileComponent } from './examples/profile/profile.component';
-import { SignupComponent } from './examples/signup/signup.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { SignupComponent } from './components/signup/signup.component';
 import { LandingComponent } from './components/landing/landing.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
+import {MethodologyComponent} from './components/methodology/methodology.component';
+import {MessageBoardComponent} from './components/message-board/message-board.component';
+import {AirComponent} from './components/air/air.component';
+import {RecyclingComponent} from './components/recycling/recycling.component';
+import {CyclingComponent} from './components/cycling/cycling.component';
+import {GoElectricComponent} from './components/go-electric/go-electric.component';
+import {FormsSliderComponent} from './components/forms-slider/forms-slider.component';
+
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -15,7 +22,18 @@ const routes: Routes =[
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'signup',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent }
+    { path: 'methodology',      component: MethodologyComponent },
+    { path: 'message-board',      component: MessageBoardComponent },
+    { path: 'air',      component: AirComponent },
+    { path: 'recycling',      component: RecyclingComponent },
+    { path: 'cycling',      component: CyclingComponent },
+    { path: 'go-electric',      component: GoElectricComponent },
+    { path: 'forms-slider',      component: FormsSliderComponent },
+    { path: 'home:kviz',             component: ComponentsComponent }
+
+
+
+
 ];
 
 @NgModule({
