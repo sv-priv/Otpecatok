@@ -24,13 +24,13 @@ export class TransportComponent implements OnInit {
       kola: new FormGroup ({
         ima: new FormControl(this.isChecked),
         nafta: new FormControl(''),
-        godina: new FormControl(0)
+        godina: new FormControl(2000)
       }),
       distanca: new FormGroup ({
-        avtomobil: new FormControl(),
-        velosiped: new FormControl(),
-        avtobus: new FormControl(),
-        motor: new FormControl()
+        avtomobil: new FormControl(0),
+        velosiped: new FormControl(0),
+        avtobus: new FormControl(0),
+        motor: new FormControl(0)
     })
     })
   }

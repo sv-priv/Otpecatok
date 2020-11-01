@@ -1,3 +1,9 @@
 .page-header{
     min-height: 60vh;
 }
+.row .com-md-6{
+    text-align: justify;
+}
+.section-story-overview{
+    text-align: justify;
+}

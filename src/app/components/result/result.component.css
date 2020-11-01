@@ -9,3 +9,6 @@
   p{
     text-align: justify;
   }
+  a{
+    word-wrap: break-word;
+  }

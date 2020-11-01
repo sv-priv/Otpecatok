@@ -4,3 +4,10 @@
 .cust{
     background-color: #f8f9fa!important;
 }
+
+.text-muted{
+    margin-top: 5%;
+}
+.wrapper{
+    text-align: justify;
+}
