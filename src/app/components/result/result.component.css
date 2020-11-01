@@ -1,5 +1,11 @@
-#divChart{
+
+  #divChart{
     display: block;
     width: 400px;
-    height: 400px;
+  }
+  .first, .second{
+    margin-bottom: 5%;
+  }
+  p{
+    text-align: justify;
   }

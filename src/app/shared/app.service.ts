@@ -233,39 +233,71 @@ export class AppService {
 				energijaParametri.drva.konverzija) /
 			energijaParametri.drva.efikasnost;
 
-		const presmetajEnergija = () => {
-			let godisnaPotrosuvacka = 0;
+			const presmetajEnergija = () => {
+				let godisnaPotrosuvacka = 0;
+				let strujaPotrosuvacka = 0;
+				let parnoPotrosuvacka = 0;
+				let naftaPotrosuvacka = 0;
+				let paletiPotrosuvacka = 0;
+				let drvaPotrosuvacka = 0;
 
-			const strujaPotrosuvacka = struja(data.energija.potrosuvacka.struja);
-			const parnoPotrosuvacka = parno(data.energija.potrosuvacka.parno);
-			const naftaPotrosuvacka = nafta(data.energija.potrosuvacka.nafta);
-			const paletiPotrosuvacka = paleti(data.energija.potrosuvacka.paleti);
-			const drvaPotrosuvacka = drva(data.energija.potrosuvacka.drva);
+				if (struja(data.energija.potrosuvacka.struja) > 0) {
+					strujaPotrosuvacka =
+						struja(data.energija.potrosuvacka.struja) /
+						data.energija.lugjeDomakinstvo;
+				}
 
-			// console.log("struja: ", strujaPotrosuvacka);
-			// console.log("parno: ", parnoPotrosuvacka);
-			// console.log("nafta: ", naftaPotrosuvacka);
-			// console.log("paleti: ", paletiPotrosuvacka);
-			// console.log("drva: ", drvaPotrosuvacka);
+				if (parno(data.energija.potrosuvacka.parno) > 0) {
+					parnoPotrosuvacka =
+						parno(data.energija.potrosuvacka.parno) /
+						data.energija.lugjeDomakinstvo;
+				}
 
-			godisnaPotrosuvacka =
-				strujaPotrosuvacka +
-				parnoPotrosuvacka +
-				naftaPotrosuvacka +
-				paletiPotrosuvacka +
-				drvaPotrosuvacka;
+				if (nafta(data.energija.potrosuvacka.nafta) > 0) {
+					naftaPotrosuvacka =
+						nafta(data.energija.potrosuvacka.nafta) /
+						data.energija.lugjeDomakinstvo;
+				}
 
-			podatoci.energija.struja = strujaPotrosuvacka;
-			podatoci.energija.parno = parnoPotrosuvacka;
-			podatoci.energija.nafta = naftaPotrosuvacka;
-			podatoci.energija.paleti = paletiPotrosuvacka;
-			podatoci.energija.drva = drvaPotrosuvacka;
-			podatoci.energija.vkupno =
-				godisnaPotrosuvacka / data.energija.lugjeDomakinstvo;
+				if (paleti(data.energija.potrosuvacka.paleti) > 0) {
+					paletiPotrosuvacka =
+						paleti(data.energija.potrosuvacka.paleti) /
+						data.energija.lugjeDomakinstvo;
+				}
 
-			//vrednosta e vo kg CO2
-			return godisnaPotrosuvacka / data.energija.lugjeDomakinstvo;
-		};
+				if (drva(data.energija.potrosuvacka.drva) > 0) {
+					drvaPotrosuvacka =
+						drva(data.energija.potrosuvacka.drva) /
+						data.energija.lugjeDomakinstvo;
+				}
+				// const parnoPotrosuvacka = parno(data.energija.potrosuvacka.parno);
+				// const naftaPotrosuvacka = nafta(data.energija.potrosuvacka.nafta);
+				// const paletiPotrosuvacka = paleti(data.energija.potrosuvacka.paleti);
+				// const drvaPotrosuvacka = drva(data.energija.potrosuvacka.drva);
+
+				// console.log("struja: ", strujaPotrosuvacka);
+				// console.log("parno: ", parnoPotrosuvacka);
+				// console.log("nafta: ", naftaPotrosuvacka);
+				// console.log("paleti: ", paletiPotrosuvacka);
+				// console.log("drva: ", drvaPotrosuvacka);
+
+				godisnaPotrosuvacka =
+					strujaPotrosuvacka +
+					parnoPotrosuvacka +
+					naftaPotrosuvacka +
+					paletiPotrosuvacka +
+					drvaPotrosuvacka;
+
+				podatoci.energija.struja = strujaPotrosuvacka;
+				podatoci.energija.parno = parnoPotrosuvacka;
+				podatoci.energija.nafta = naftaPotrosuvacka;
+				podatoci.energija.paleti = paletiPotrosuvacka;
+				podatoci.energija.drva = drvaPotrosuvacka;
+				podatoci.energija.vkupno = godisnaPotrosuvacka;
+
+				//vrednosta e vo kg CO2
+				return godisnaPotrosuvacka;
+			};
 
 		const foodDiet = (dieta) => hranaParametri.foodDiet[dieta] * 365;
 		const foodWaste = (waste) =>
