@@ -44,9 +44,7 @@
     "rxjs": "6.5.4",
     "rxjs-compat": "6.5.4",
     "typescript": "3.7.5",
-    "zone.js": "0.10.2"
-  },
-  "devDependencies": {
+    "zone.js": "0.10.2",
     "@angular-devkit/build-angular": "^0.901.12",
     "@angular/language-service": "9.0.6",
     "@types/jasmine": "3.5.9",
@@ -64,6 +62,9 @@
     "protractor": "5.4.3",
     "ts-node": "3.0.4",
     "tslint": "6.1.0"
+  },
+  "devDependencies": {
+
   },
   "engines": {
     "node": "14.15.0",
