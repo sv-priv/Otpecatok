@@ -1,9 +1,11 @@
 <form [formGroup]="dietForm" (ngSubmit)="saveDietForm()" >
     <label for="">
-        <h4>Кој е вашиот тип на исхрана?</h4>
+        <h4> Исхрана </h4>
     </label>
         <br>
         <div class="form-check">
+          <label>Кој е вашиот тип на исхрана?</label>
+
           <input class="form-check-input" type="radio" formControlName="dieta" id="exampleRadios1" value="vegan" checked>
           <label class="form-check-label" for="exampleRadios1">
                 Веган

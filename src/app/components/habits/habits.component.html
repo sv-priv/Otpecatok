@@ -1,5 +1,5 @@
 <form [formGroup]="habitsForm" (ngSubmit)="saveHabitsForm()">
-    <small id="" class="form-text text-muted">Сите пресметки кои треба да ги внесете се на годишно ниво.</small>
+    <h4>Навики</h4>
 
     <div class="form-group">
         <label for="">Колку часови годишно летате со авион?</label>
@@ -36,10 +36,12 @@
             <label for="">Колкаво количество на ѓубре фрлате годишно?</label>
             <input type="number" min="0" max="912" class="form-control" formControlName="gjubre" placeholder="Количина на фрлено ѓубре..">
 
-        <small id="" class="form-text text-muted">Од 0.5кг до 1кг ѓубре фрламе во една пластична ќеса.
+        <small id="" class="form-text text-muted">*Од 0.5кг до 1кг ѓубре фрламе во една пластична ќеса.
             Вклучете ја тежината на електрични уреди, мебел, стара хартија и слично што би го фрлиле во текот на годината.
             Просекот е 456кг по човек. Дали сметате дека сте над или под просекот годишно?
       </small>
+      <small id="" class="form-text text-muted">*Сите пресметки кои треба да ги внесете се на годишно ниво.</small>
+
     </div>
 
 <!--
