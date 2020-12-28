@@ -11,16 +11,7 @@
         </div>
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
-                <!-- <li class="nav-item">
-                    <div ngbDropdown class="d-inline-block dropdown">
-                        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle><i class="nc-icon nc-bulb-63"></i>Дејствувај!</a>
-                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="dropdown-primary">
-                            <a class="dropdown-item">Action - 1</a>
-                            <a class="dropdown-item">Another Action</a>
-                            <a class="dropdown-item">Something else is here</a>
-                        </div>
-                    </div>
-                </li> -->
+
                 <li class="nav-item">
 
                 <a href="#kviz" class="nav-link" ><i class="nc-icon nc-layers-3"></i>Пресметај</a>
@@ -46,12 +37,12 @@
                 </li>
 
 
-                <li class="nav-item" *ngIf="isHome()">
-                    <a [routerLink] ="['/signup']" class="btn btn-success btn-round">Најави се</a>
+                <li class="nav-item" >
+                    <a [routerLink] ="['/where-to-recycle']" class="btn btn-success btn-round">Рециклирај</a>
                 </li>
-                <li class="nav-item" *ngIf="!isHome()">
+                <!-- <li class="nav-item" *ngIf="!isHome()">
                     <a [routerLink]="['/user-profile']"  class="nav-link"><i class="nc-icon nc-single-02"></i>Мој Профил</a>
-                </li>
+                </li> -->
 
             </ul>
         </div>

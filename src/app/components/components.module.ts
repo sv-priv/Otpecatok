@@ -21,6 +21,7 @@ import {EnergyComponent} from './energy/energy.component';
 import {HabitsComponent} from './habits/habits.component';
 import {DietComponent} from './diet/diet.component';
 import {TransportComponent} from './transport/transport.component';
+import { WhereToRecycleComponent } from './where-to-recycle/where-to-recycle.component';
 
 @NgModule({
     imports: [
@@ -48,7 +49,8 @@ import {TransportComponent} from './transport/transport.component';
         EnergyComponent,
         HabitsComponent,
         DietComponent,
-        TransportComponent
+        TransportComponent,
+        WhereToRecycleComponent
 
     ],
 

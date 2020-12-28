@@ -14,6 +14,9 @@ import {RecyclingComponent} from './components/recycling/recycling.component';
 import {CyclingComponent} from './components/cycling/cycling.component';
 import {GoElectricComponent} from './components/go-electric/go-electric.component';
 import {FormsSliderComponent} from './components/forms-slider/forms-slider.component';
+import {WhereToRecycleComponent} from './components/where-to-recycle/where-to-recycle.component';
+
+
 
 
 const routes: Routes =[
@@ -27,6 +30,7 @@ const routes: Routes =[
     { path: 'air',      component: AirComponent },
     { path: 'recycling',      component: RecyclingComponent },
     { path: 'cycling',      component: CyclingComponent },
+    {path: 'where-to-recycle',   component: WhereToRecycleComponent},
     { path: 'go-electric',      component: GoElectricComponent },
     { path: 'forms-slider',      component: FormsSliderComponent },
     { path: 'home:kviz',             component: ComponentsComponent }
