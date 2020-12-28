@@ -14,6 +14,7 @@ import {RecyclingComponent} from './components/recycling/recycling.component';
 import {CyclingComponent} from './components/cycling/cycling.component';
 import {GoElectricComponent} from './components/go-electric/go-electric.component';
 import {FormsSliderComponent} from './components/forms-slider/forms-slider.component';
+import {ErrorComponent} from './components/error/error.component';
 
 
 const routes: Routes =[
@@ -29,7 +30,8 @@ const routes: Routes =[
     { path: 'cycling',      component: CyclingComponent },
     { path: 'go-electric',      component: GoElectricComponent },
     { path: 'forms-slider',      component: FormsSliderComponent },
-    { path: 'home:kviz',             component: ComponentsComponent }
+    { path: 'home:kviz',             component: ComponentsComponent },
+    {path: '**', component: ErrorComponent }
 
 
 
